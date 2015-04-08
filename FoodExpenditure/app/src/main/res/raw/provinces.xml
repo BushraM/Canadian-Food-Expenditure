@@ -1,0 +1,1271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:Structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure http://www.sdmx.org/docs/2_0/SDMXStructure.xsd http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message http://www.sdmx.org/docs/2_0/SDMXMessage.xsd">
+  <Header>
+    <ID>203-0028 [footnote reference:3,4]</ID>
+    <Test>true</Test>
+    <Name xml:lang="en">Survey of household spending (SHS), detailed food expenditures, Canada, regions and provinces</Name>
+    <Name xml:lang="fr">Enquête sur les dépenses des ménages (EDM), dépenses alimentaires détaillées, Canada, régions et provinces</Name>
+    <Prepared>2015-01-21T18:46:28-05:00</Prepared>
+    <Sender id="STATCAN" />
+    <Receiver id="STATCAN" />
+  </Header>
+  <CodeLists>
+    <structure:CodeList xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="CL_GEO" version="1.0" isFinal="false">
+      <structure:Name xml:lang="en">Geography</structure:Name>
+      <structure:Name xml:lang="fr">Géographie</structure:Name>
+      <structure:Code value="1">
+        <structure:Description xml:lang="en">Canada</structure:Description>
+        <structure:Description xml:lang="fr">Canada</structure:Description>
+      </structure:Code>
+      <structure:Code value="2">
+        <structure:Description xml:lang="en">Atlantic Region</structure:Description>
+        <structure:Description xml:lang="fr">Région de l'Atlantique</structure:Description>
+      </structure:Code>
+      <structure:Code value="3">
+        <structure:Description xml:lang="en">Newfoundland and Labrador</structure:Description>
+        <structure:Description xml:lang="fr">Terre-Neuve-et-Labrador</structure:Description>
+      </structure:Code>
+      <structure:Code value="4">
+        <structure:Description xml:lang="en">Prince Edward Island</structure:Description>
+        <structure:Description xml:lang="fr">Île-du-Prince-Édouard</structure:Description>
+      </structure:Code>
+      <structure:Code value="5">
+        <structure:Description xml:lang="en">Nova Scotia</structure:Description>
+        <structure:Description xml:lang="fr">Nouvelle-Écosse</structure:Description>
+      </structure:Code>
+      <structure:Code value="6">
+        <structure:Description xml:lang="en">New Brunswick</structure:Description>
+        <structure:Description xml:lang="fr">Nouveau-Brunswick</structure:Description>
+      </structure:Code>
+      <structure:Code value="7">
+        <structure:Description xml:lang="en">Quebec</structure:Description>
+        <structure:Description xml:lang="fr">Québec</structure:Description>
+      </structure:Code>
+      <structure:Code value="8">
+        <structure:Description xml:lang="en">Ontario</structure:Description>
+        <structure:Description xml:lang="fr">Ontario</structure:Description>
+      </structure:Code>
+      <structure:Code value="9">
+        <structure:Description xml:lang="en">Prairie Region</structure:Description>
+        <structure:Description xml:lang="fr">Région des Prairies</structure:Description>
+      </structure:Code>
+      <structure:Code value="10">
+        <structure:Description xml:lang="en">Manitoba</structure:Description>
+        <structure:Description xml:lang="fr">Manitoba</structure:Description>
+      </structure:Code>
+      <structure:Code value="11">
+        <structure:Description xml:lang="en">Saskatchewan</structure:Description>
+        <structure:Description xml:lang="fr">Saskatchewan</structure:Description>
+      </structure:Code>
+      <structure:Code value="12">
+        <structure:Description xml:lang="en">Alberta</structure:Description>
+        <structure:Description xml:lang="fr">Alberta</structure:Description>
+      </structure:Code>
+      <structure:Code value="13">
+        <structure:Description xml:lang="en">British Columbia</structure:Description>
+        <structure:Description xml:lang="fr">Colombie-Britannique</structure:Description>
+      </structure:Code>
+    </structure:CodeList>
+
+    <structure:CodeList xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="CL_STAT" version="1.0" isFinal="false">
+      <structure:Name xml:lang="en">Statistic</structure:Name>
+      <structure:Name xml:lang="fr">Statistique</structure:Name>
+      <structure:Code value="1">
+        <structure:Description xml:lang="en">Average expenditure per household</structure:Description>
+        <structure:Description xml:lang="fr">Dépense moyenne par ménage</structure:Description>
+      </structure:Code>
+    </structure:CodeList>
+
+    <structure:CodeList xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="CL_SUMMARY" version="1.0" isFinal="false">
+      <structure:Name xml:lang="en">Food expenditures, summary-level categories</structure:Name>
+      <structure:Name xml:lang="fr">Dépenses alimentaires, catégories de niveau sommaire</structure:Name>
+      <structure:Code value="1">
+        <structure:Description xml:lang="en">Food expenditures</structure:Description>
+        <structure:Description xml:lang="fr">Dépenses alimentaires</structure:Description>
+        <structure:Annotations>
+          <common:Annotation>
+            <common:AnnotationTitle>1</common:AnnotationTitle>
+            <common:AnnotationType>Footnotes for Member</common:AnnotationType>
+          </common:Annotation>
+        </structure:Annotations>
+      </structure:Code>
+
+      <structure:Code value="2">
+        <structure:Description xml:lang="en">Food purchased from stores</structure:Description>
+        <structure:Description xml:lang="fr">Aliments achetés au magasin</structure:Description>
+      </structure:Code>
+      <structure:Code value="3">
+        <structure:Description xml:lang="en">Bakery products</structure:Description>
+        <structure:Description xml:lang="fr">Produits de boulangerie</structure:Description>
+      </structure:Code>
+      <structure:Code value="4">
+        <structure:Description xml:lang="en">Bread and unsweetened rolls and buns</structure:Description>
+        <structure:Description xml:lang="fr">Pains et petits pains et brioches non sucrés</structure:Description>
+      </structure:Code>
+      <structure:Code value="180">
+        <structure:Description xml:lang="en">Bread</structure:Description>
+        <structure:Description xml:lang="fr">Pains</structure:Description>
+      </structure:Code>
+      <structure:Code value="181">
+        <structure:Description xml:lang="en">Unsweetened rolls and buns</structure:Description>
+        <structure:Description xml:lang="fr">Petits pains et brioches, non sucrés</structure:Description>
+      </structure:Code>
+      <structure:Code value="5">
+        <structure:Description xml:lang="en">Cookies and crackers</structure:Description>
+        <structure:Description xml:lang="fr">Biscuits et craquelins</structure:Description>
+      </structure:Code>
+      <structure:Code value="182">
+        <structure:Description xml:lang="en">Cookies and sweet biscuits</structure:Description>
+        <structure:Description xml:lang="fr">Biscuits et petits gâteaux secs sucrés</structure:Description>
+      </structure:Code>
+      <structure:Code value="183">
+        <structure:Description xml:lang="en">Crackers and crisp breads</structure:Description>
+        <structure:Description xml:lang="fr">Craquelins et pains croustillants</structure:Description>
+      </structure:Code>
+      <structure:Code value="6">
+        <structure:Description xml:lang="en">Other bakery products</structure:Description>
+        <structure:Description xml:lang="fr">Autres produits de boulangerie</structure:Description>
+      </structure:Code>
+      <structure:Code value="7">
+        <structure:Description xml:lang="en">Other bakery products (except frozen)</structure:Description>
+        <structure:Description xml:lang="fr">Autres produits de boulangerie (sauf congelés)</structure:Description>
+      </structure:Code>
+      <structure:Code value="184">
+        <structure:Description xml:lang="en">Ready-to-bake bakery products (except frozen)</structure:Description>
+        <structure:Description xml:lang="fr">Produits de boulangerie prêts à cuire (sauf congelés)</structure:Description>
+      </structure:Code>
+      <structure:Code value="185">
+        <structure:Description xml:lang="en">Ready-to-eat pastry (except frozen)</structure:Description>
+        <structure:Description xml:lang="fr">Pâtisseries prêtes à servir (sauf congelées)</structure:Description>
+      </structure:Code>
+      <structure:Code value="186">
+        <structure:Description xml:lang="en">All other bakery products (except frozen)</structure:Description>
+        <structure:Description xml:lang="fr">Tous les autres produits de boulangerie (sauf congelés)</structure:Description>
+      </structure:Code>
+      <structure:Code value="8">
+        <structure:Description xml:lang="en">Frozen bakery products</structure:Description>
+        <structure:Description xml:lang="fr">Produits de boulangerie (congelés)</structure:Description>
+      </structure:Code>
+      <structure:Code value="187">
+        <structure:Description xml:lang="en">Dessert pies, cakes, squares and other pastries - prepared and frozen</structure:Description>
+        <structure:Description xml:lang="fr">Tartes, gâteaux, carrés et autres pâtisseries préparées (congelés)</structure:Description>
+      </structure:Code>
+      <structure:Code value="188">
+        <structure:Description xml:lang="en">Other frozen bakery products</structure:Description>
+        <structure:Description xml:lang="fr">Autres produits de boulangerie congelés</structure:Description>
+      </structure:Code>
+      <structure:Code value="9">
+        <structure:Description xml:lang="en">Cereal grains and cereal products</structure:Description>
+        <structure:Description xml:lang="fr">Grains et produits céréaliers</structure:Description>
+      </structure:Code>
+      <structure:Code value="10">
+        <structure:Description xml:lang="en">Rice and rice mixes</structure:Description>
+        <structure:Description xml:lang="fr">Riz et mélanges de riz</structure:Description>
+      </structure:Code>
+      <structure:Code value="189">
+        <structure:Description xml:lang="en">Rice</structure:Description>
+        <structure:Description xml:lang="fr">Riz</structure:Description>
+      </structure:Code>
+      <structure:Code value="190">
+        <structure:Description xml:lang="en">Rice mixes</structure:Description>
+        <structure:Description xml:lang="fr">Mélanges de riz</structure:Description>
+      </structure:Code>
+      <structure:Code value="11">
+        <structure:Description xml:lang="en">Pasta products</structure:Description>
+        <structure:Description xml:lang="fr">Produits de pâtes alimentaires</structure:Description>
+      </structure:Code>
+      <structure:Code value="12">
+        <structure:Description xml:lang="en">Pasta (fresh or dry)</structure:Description>
+        <structure:Description xml:lang="fr">Pâtes alimentaires (fraîches ou sèches)</structure:Description>
+      </structure:Code>
+      <structure:Code value="13">
+        <structure:Description xml:lang="en">Pasta (canned)</structure:Description>
+        <structure:Description xml:lang="fr">Pâtes alimentaires (en conserve)</structure:Description>
+      </structure:Code>
+      <structure:Code value="14">
+        <structure:Description xml:lang="en">Pasta mixes</structure:Description>
+        <structure:Description xml:lang="fr">Mélanges de pâtes alimentaires</structure:Description>
+      </structure:Code>
+      <structure:Code value="15">
+        <structure:Description xml:lang="en">Other cereal grains and cereal products</structure:Description>
+        <structure:Description xml:lang="fr">Autres grains et produits céréaliers</structure:Description>
+      </structure:Code>
+      <structure:Code value="16">
+        <structure:Description xml:lang="en">Flour and flour-based mixes</structure:Description>
+        <structure:Description xml:lang="fr">Farine et autres mélanges à base de farine</structure:Description>
+      </structure:Code>
+      <structure:Code value="191">
+        <structure:Description xml:lang="en">Flour</structure:Description>
+        <structure:Description xml:lang="fr">Farine</structure:Description>
+      </structure:Code>
+      <structure:Code value="192">
+        <structure:Description xml:lang="en">Cake and other flour-based mixes</structure:Description>
+        <structure:Description xml:lang="fr">Mélanges à gâteau et autres mélanges à base de farine</structure:Description>
+      </structure:Code>
+      <structure:Code value="17">
+        <structure:Description xml:lang="en">Breakfast cereal and other grain products (except infant)</structure:Description>
+        <structure:Description xml:lang="fr">Céréales à déjeuner et autres produits céréaliers (sauf pour les nourrissons)</structure:Description>
+      </structure:Code>
+      <structure:Code value="18">
+        <structure:Description xml:lang="en">Breakfast cereal (except infant cereals)</structure:Description>
+        <structure:Description xml:lang="fr">Céréales à déjeuner (sauf pour les nourrissons)</structure:Description>
+      </structure:Code>
+      <structure:Code value="20">
+        <structure:Description xml:lang="en">Cereal bars</structure:Description>
+        <structure:Description xml:lang="fr">Barres de céréales</structure:Description>
+      </structure:Code>
+      <structure:Code value="21">
+        <structure:Description xml:lang="en">Cereal-based snack food</structure:Description>
+        <structure:Description xml:lang="fr">Collations à base de céréales</structure:Description>
+      </structure:Code>
+      <structure:Code value="19">
+        <structure:Description xml:lang="en">Other cereal grains (unmilled or milled)</structure:Description>
+        <structure:Description xml:lang="fr">Autres grains (moulus ou non)</structure:Description>
+      </structure:Code>
+      <structure:Code value="22">
+        <structure:Description xml:lang="en">Fruit, fruit preparations and nuts</structure:Description>
+        <structure:Description xml:lang="fr">Fruits, préparations à base de fruits, et noix</structure:Description>
+      </structure:Code>
+      <structure:Code value="23">
+        <structure:Description xml:lang="en">Fresh fruit</structure:Description>
+        <structure:Description xml:lang="fr">Fruits frais</structure:Description>
+      </structure:Code>
+      <structure:Code value="24">
+        <structure:Description xml:lang="en">Apples (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Pommes (fraîches)</structure:Description>
+      </structure:Code>
+      <structure:Code value="25">
+        <structure:Description xml:lang="en">Bananas and plantains (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Bananes et plantains (frais)</structure:Description>
+      </structure:Code>
+      <structure:Code value="26">
+        <structure:Description xml:lang="en">Grapes (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Raisins (frais)</structure:Description>
+      </structure:Code>
+      <structure:Code value="27">
+        <structure:Description xml:lang="en">Peaches and nectarines (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Pêches et nectarines (fraîches)</structure:Description>
+      </structure:Code>
+      <structure:Code value="28">
+        <structure:Description xml:lang="en">Peaches (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Pêches (fraîches)</structure:Description>
+      </structure:Code>
+      <structure:Code value="29">
+        <structure:Description xml:lang="en">Nectarines (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Nectarines (fraîches)</structure:Description>
+      </structure:Code>
+      <structure:Code value="30">
+        <structure:Description xml:lang="en">Pears (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Poires (fraîches)</structure:Description>
+      </structure:Code>
+      <structure:Code value="31">
+        <structure:Description xml:lang="en">Berries (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Baies (fraîches)</structure:Description>
+      </structure:Code>
+      <structure:Code value="32">
+        <structure:Description xml:lang="en">Strawberries (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Fraises (fraîches)</structure:Description>
+      </structure:Code>
+      <structure:Code value="33">
+        <structure:Description xml:lang="en">Other berries (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Autres baies (fraîches)</structure:Description>
+      </structure:Code>
+      <structure:Code value="34">
+        <structure:Description xml:lang="en">Citrus fruit (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Agrumes (frais)</structure:Description>
+      </structure:Code>
+      <structure:Code value="35">
+        <structure:Description xml:lang="en">Other fruit (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Autres fruits (frais)</structure:Description>
+      </structure:Code>
+      <structure:Code value="36">
+        <structure:Description xml:lang="en">Preserved fruit and fruit preparations</structure:Description>
+        <structure:Description xml:lang="fr">Conserves de fruits et préparations à base de fruits</structure:Description>
+      </structure:Code>
+      <structure:Code value="37">
+        <structure:Description xml:lang="en">Fruit juice</structure:Description>
+        <structure:Description xml:lang="fr">Jus de fruits</structure:Description>
+      </structure:Code>
+      <structure:Code value="38">
+        <structure:Description xml:lang="en">Ready-to-drink citrus juice</structure:Description>
+        <structure:Description xml:lang="fr">Jus d'agrumes prêt à boire</structure:Description>
+      </structure:Code>
+      <structure:Code value="39">
+        <structure:Description xml:lang="en">Other ready-to-drink fruit juices</structure:Description>
+        <structure:Description xml:lang="fr">Autres jus de fruits prêts à boire</structure:Description>
+      </structure:Code>
+      <structure:Code value="193">
+        <structure:Description xml:lang="en">Ready-to-drink apple juice</structure:Description>
+        <structure:Description xml:lang="fr">Jus de pommes prêt à boire</structure:Description>
+      </structure:Code>
+      <structure:Code value="194">
+        <structure:Description xml:lang="en">All other ready-to-drink fruit juices</structure:Description>
+        <structure:Description xml:lang="fr">Tous les autres jus de fruits prêts à boire</structure:Description>
+      </structure:Code>
+      <structure:Code value="40">
+        <structure:Description xml:lang="en">Concentrated fruit juice (frozen)</structure:Description>
+        <structure:Description xml:lang="fr">Jus de fruits concentrés (congelés)</structure:Description>
+      </structure:Code>
+      <structure:Code value="41">
+        <structure:Description xml:lang="en">Other preserved fruit and fruit preparations</structure:Description>
+        <structure:Description xml:lang="fr">Autres conserves de fruits ou préparations à base de fruits</structure:Description>
+      </structure:Code>
+      <structure:Code value="42">
+        <structure:Description xml:lang="en">Preserved fruit (including canned fruit pie filling and frozen fruit)</structure:Description>
+        <structure:Description xml:lang="fr">Conserves de fruits (inclut garnitures aux fruits pour tartes et fruits congelés)</structure:Description>
+      </structure:Code>
+      <structure:Code value="43">
+        <structure:Description xml:lang="en">Canned or bottled fruit</structure:Description>
+        <structure:Description xml:lang="fr">Fruits en conserve ou embouteillés</structure:Description>
+      </structure:Code>
+      <structure:Code value="44">
+        <structure:Description xml:lang="en">Fruit pie filling</structure:Description>
+        <structure:Description xml:lang="fr">Garnitures aux fruits pour tartes</structure:Description>
+      </structure:Code>
+      <structure:Code value="45">
+        <structure:Description xml:lang="en">Frozen fruit</structure:Description>
+        <structure:Description xml:lang="fr">Fruits congelés</structure:Description>
+      </structure:Code>
+      <structure:Code value="46">
+        <structure:Description xml:lang="en">Dried or other preserved fruit</structure:Description>
+        <structure:Description xml:lang="fr">Fruits séchés ou autres conserves de fruits</structure:Description>
+      </structure:Code>
+      <structure:Code value="47">
+        <structure:Description xml:lang="en">Raisins</structure:Description>
+        <structure:Description xml:lang="fr">Raisins secs</structure:Description>
+      </structure:Code>
+      <structure:Code value="48">
+        <structure:Description xml:lang="en">Other dried or preserved fruit</structure:Description>
+        <structure:Description xml:lang="fr">Autres fruits séchés ou conserves de fruits</structure:Description>
+      </structure:Code>
+      <structure:Code value="49">
+        <structure:Description xml:lang="en">Jams, jellies, marmalades and similar preserves</structure:Description>
+        <structure:Description xml:lang="fr">Confitures, gelées, marmelades et autres conserves similaires</structure:Description>
+      </structure:Code>
+      <structure:Code value="50">
+        <structure:Description xml:lang="en">Fruit drinks (canned, bottled or frozen)</structure:Description>
+        <structure:Description xml:lang="fr">Boissons fruitées (en conserve, embouteillées ou congelées)</structure:Description>
+      </structure:Code>
+      <structure:Code value="51">
+        <structure:Description xml:lang="en">Nuts and seeds</structure:Description>
+        <structure:Description xml:lang="fr">Noix et graines</structure:Description>
+      </structure:Code>
+      <structure:Code value="52">
+        <structure:Description xml:lang="en">Peanuts (shelled or unshelled)</structure:Description>
+        <structure:Description xml:lang="fr">Arachides (sans ou avec écales)</structure:Description>
+      </structure:Code>
+      <structure:Code value="53">
+        <structure:Description xml:lang="en">Other nuts and seeds</structure:Description>
+        <structure:Description xml:lang="fr">Autres noix et graines</structure:Description>
+      </structure:Code>
+      <structure:Code value="54">
+        <structure:Description xml:lang="en">Vegetables and vegetable preparations</structure:Description>
+        <structure:Description xml:lang="fr">Légumes et préparations à base de légumes</structure:Description>
+      </structure:Code>
+      <structure:Code value="55">
+        <structure:Description xml:lang="en">Fresh vegetables</structure:Description>
+        <structure:Description xml:lang="fr">Légumes frais</structure:Description>
+      </structure:Code>
+      <structure:Code value="56">
+        <structure:Description xml:lang="en">Potatoes (except sweet potatoes)</structure:Description>
+        <structure:Description xml:lang="fr">Pommes de terre (sauf les patates sucrées)</structure:Description>
+      </structure:Code>
+      <structure:Code value="57">
+        <structure:Description xml:lang="en">Tomatoes (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Tomates (fraîches)</structure:Description>
+      </structure:Code>
+      <structure:Code value="58">
+        <structure:Description xml:lang="en">Lettuce (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Laitue (fraîche)</structure:Description>
+      </structure:Code>
+      <structure:Code value="59">
+        <structure:Description xml:lang="en">Cabbage (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Chou (frais)</structure:Description>
+      </structure:Code>
+      <structure:Code value="60">
+        <structure:Description xml:lang="en">Carrots (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Carottes (fraîches)</structure:Description>
+      </structure:Code>
+      <structure:Code value="61">
+        <structure:Description xml:lang="en">Onions (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Oignons (frais)</structure:Description>
+      </structure:Code>
+      <structure:Code value="62">
+        <structure:Description xml:lang="en">Celery (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Céleri (frais)</structure:Description>
+      </structure:Code>
+      <structure:Code value="63">
+        <structure:Description xml:lang="en">Cucumber (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Concombres (frais)</structure:Description>
+      </structure:Code>
+      <structure:Code value="64">
+        <structure:Description xml:lang="en">Mushrooms (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Champignons (frais)</structure:Description>
+      </structure:Code>
+      <structure:Code value="65">
+        <structure:Description xml:lang="en">Broccoli (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Brocoli (frais)</structure:Description>
+      </structure:Code>
+      <structure:Code value="195">
+        <structure:Description xml:lang="en">Peppers (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Poivrons (frais)</structure:Description>
+      </structure:Code>
+      <structure:Code value="66">
+        <structure:Description xml:lang="en">Other vegetables (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Autres légumes (frais)</structure:Description>
+      </structure:Code>
+      <structure:Code value="196">
+        <structure:Description xml:lang="en">Cauliflower (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Chou-fleurs (frais)</structure:Description>
+      </structure:Code>
+      <structure:Code value="197">
+        <structure:Description xml:lang="en">Seaweed</structure:Description>
+        <structure:Description xml:lang="fr">Algues</structure:Description>
+      </structure:Code>
+      <structure:Code value="198">
+        <structure:Description xml:lang="en">Corn (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Maïs (frais)</structure:Description>
+      </structure:Code>
+      <structure:Code value="199">
+        <structure:Description xml:lang="en">Eggplant (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Aubergines (fraîches)</structure:Description>
+      </structure:Code>
+      <structure:Code value="200">
+        <structure:Description xml:lang="en">Squash (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Courges (fraîches)</structure:Description>
+      </structure:Code>
+      <structure:Code value="201">
+        <structure:Description xml:lang="en">Peas (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Petits pois (frais)</structure:Description>
+      </structure:Code>
+      <structure:Code value="202">
+        <structure:Description xml:lang="en">Beans (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Haricots (frais)</structure:Description>
+      </structure:Code>
+      <structure:Code value="203">
+        <structure:Description xml:lang="en">Mixed vegetables (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Mélange de légumes (frais)</structure:Description>
+      </structure:Code>
+      <structure:Code value="204">
+        <structure:Description xml:lang="en">All other vegetables (fresh)</structure:Description>
+        <structure:Description xml:lang="fr">Tous les autres légumes (frais)</structure:Description>
+      </structure:Code>
+      <structure:Code value="67">
+        <structure:Description xml:lang="en">Frozen and dried vegetables</structure:Description>
+        <structure:Description xml:lang="fr">Légumes congelés et déshydratés</structure:Description>
+      </structure:Code>
+      <structure:Code value="68">
+        <structure:Description xml:lang="en">Potato products (frozen)</structure:Description>
+        <structure:Description xml:lang="fr">Produits de pommes de terre (congelés)</structure:Description>
+      </structure:Code>
+      <structure:Code value="69">
+        <structure:Description xml:lang="en">Other frozen vegetables</structure:Description>
+        <structure:Description xml:lang="fr">Autres légumes congelés</structure:Description>
+      </structure:Code>
+      <structure:Code value="70">
+        <structure:Description xml:lang="en">Dried vegetables and legumes</structure:Description>
+        <structure:Description xml:lang="fr">Légumes déshydratés et légumineuses</structure:Description>
+      </structure:Code>
+      <structure:Code value="71">
+        <structure:Description xml:lang="en">Canned vegetables and other vegetable preparations</structure:Description>
+        <structure:Description xml:lang="fr">Légumes en conserve et autres préparations à base de légumes</structure:Description>
+      </structure:Code>
+      <structure:Code value="72">
+        <structure:Description xml:lang="en">Canned or bottled vegetables</structure:Description>
+        <structure:Description xml:lang="fr">Légumes en conserve ou embouteillés</structure:Description>
+      </structure:Code>
+      <structure:Code value="73">
+        <structure:Description xml:lang="en">Tomatoes (canned or bottled, including tomato paste)</structure:Description>
+        <structure:Description xml:lang="fr">Tomates (en conserve ou embouteillées, inclut la pâte de tomates)</structure:Description>
+      </structure:Code>
+      <structure:Code value="74">
+        <structure:Description xml:lang="en">Peas (canned or bottled)</structure:Description>
+        <structure:Description xml:lang="fr">Pois (en conserve ou embouteillés)</structure:Description>
+      </structure:Code>
+      <structure:Code value="75">
+        <structure:Description xml:lang="en">Beans (canned or bottled)</structure:Description>
+        <structure:Description xml:lang="fr">Haricots (en conserve ou embouteillés)</structure:Description>
+      </structure:Code>
+      <structure:Code value="76">
+        <structure:Description xml:lang="en">Other vegetables or legumes (canned or bottled, except infant food)</structure:Description>
+        <structure:Description xml:lang="fr">Autres légumes ou légumineuses (en conserve ou embouteillés, sauf les aliments pour nourrissons)</structure:Description>
+      </structure:Code>
+      <structure:Code value="205">
+        <structure:Description xml:lang="en">Other legumes (canned or bottled)</structure:Description>
+        <structure:Description xml:lang="fr">Autres légumineuses (en conserve ou embouteillées)</structure:Description>
+      </structure:Code>
+      <structure:Code value="207">
+        <structure:Description xml:lang="en">Mixed vegetables (canned)</structure:Description>
+        <structure:Description xml:lang="fr">Mélange de légumes (en conserve)</structure:Description>
+      </structure:Code>
+      <structure:Code value="206">
+        <structure:Description xml:lang="en">All other vegetables (canned or bottled, except infant foods)</structure:Description>
+        <structure:Description xml:lang="fr">Tous les autres légumes (en conserve ou embouteillés, sauf les aliments pour nourrissons)</structure:Description>
+      </structure:Code>
+      <structure:Code value="77">
+        <structure:Description xml:lang="en">Ready-to-serve or ready-to-cook prepared salads and side dishes, fruit or vegetable based</structure:Description>
+        <structure:Description xml:lang="fr">Salades ou plats d'accompagnement à base de fruits ou de légumes, prêts à manger ou prêts à cuire</structure:Description>
+      </structure:Code>
+      <structure:Code value="78">
+        <structure:Description xml:lang="en">Vegetable juice (canned or bottled)</structure:Description>
+        <structure:Description xml:lang="fr">Jus de légumes (en conserve ou embouteillé)</structure:Description>
+      </structure:Code>
+      <structure:Code value="79">
+        <structure:Description xml:lang="en">Tomato juice (canned or bottled)</structure:Description>
+        <structure:Description xml:lang="fr">Jus de tomates (en conserve ou embouteillé)</structure:Description>
+      </structure:Code>
+      <structure:Code value="80">
+        <structure:Description xml:lang="en">Other vegetable juice (canned or bottled)</structure:Description>
+        <structure:Description xml:lang="fr">Autres jus de légumes (en conserve ou embouteillé)</structure:Description>
+      </structure:Code>
+      <structure:Code value="81">
+        <structure:Description xml:lang="en">Dairy products and eggs</structure:Description>
+        <structure:Description xml:lang="fr">Produits laitiers et oeufs</structure:Description>
+      </structure:Code>
+      <structure:Code value="82">
+        <structure:Description xml:lang="en">Cheese</structure:Description>
+        <structure:Description xml:lang="fr">Fromage</structure:Description>
+      </structure:Code>
+      <structure:Code value="83">
+        <structure:Description xml:lang="en">Cheddar cheese</structure:Description>
+        <structure:Description xml:lang="fr">Cheddar</structure:Description>
+      </structure:Code>
+      <structure:Code value="84">
+        <structure:Description xml:lang="en">Mozzarella cheese</structure:Description>
+        <structure:Description xml:lang="fr">Mozzarella</structure:Description>
+      </structure:Code>
+      <structure:Code value="85">
+        <structure:Description xml:lang="en">Processed cheese</structure:Description>
+        <structure:Description xml:lang="fr">Fromage fondu</structure:Description>
+      </structure:Code>
+      <structure:Code value="86">
+        <structure:Description xml:lang="en">Other cheeses</structure:Description>
+        <structure:Description xml:lang="fr">Autres fromages</structure:Description>
+      </structure:Code>
+      <structure:Code value="208">
+        <structure:Description xml:lang="en">Cottage cheese, ricotta cheese and other unripened cheese</structure:Description>
+        <structure:Description xml:lang="fr">Fromage cottage, ricotta ou autres fromage frais</structure:Description>
+      </structure:Code>
+      <structure:Code value="209">
+        <structure:Description xml:lang="en">Other natural and ripened cheese</structure:Description>
+        <structure:Description xml:lang="fr">Autres fromages naturels et fromages vieillis</structure:Description>
+      </structure:Code>
+      <structure:Code value="210">
+        <structure:Description xml:lang="en">Cream cheese</structure:Description>
+        <structure:Description xml:lang="fr">Fromage à la crème</structure:Description>
+      </structure:Code>
+      <structure:Code value="211">
+        <structure:Description xml:lang="en">All other cheeses</structure:Description>
+        <structure:Description xml:lang="fr">Tous les autres fromages</structure:Description>
+      </structure:Code>
+      <structure:Code value="87">
+        <structure:Description xml:lang="en">Milk</structure:Description>
+        <structure:Description xml:lang="fr">Lait</structure:Description>
+      </structure:Code>
+      <structure:Code value="212">
+        <structure:Description xml:lang="en">Fluid whole milk</structure:Description>
+        <structure:Description xml:lang="fr">Lait entier liquide</structure:Description>
+      </structure:Code>
+      <structure:Code value="213">
+        <structure:Description xml:lang="en">Fluid low-fat milk</structure:Description>
+        <structure:Description xml:lang="fr">Lait liquide à faible teneur en gras</structure:Description>
+      </structure:Code>
+      <structure:Code value="214">
+        <structure:Description xml:lang="en">Fluid low-fat milk (2%)</structure:Description>
+        <structure:Description xml:lang="fr">Lait liquide à 2% de matières grasses</structure:Description>
+      </structure:Code>
+      <structure:Code value="215">
+        <structure:Description xml:lang="en">Fluid low-fat milk (1%)</structure:Description>
+        <structure:Description xml:lang="fr">Lait liquide à 1% de matières grasses</structure:Description>
+      </structure:Code>
+      <structure:Code value="216">
+        <structure:Description xml:lang="en">Skim and other fluid milk</structure:Description>
+        <structure:Description xml:lang="fr">Lait écrémé et autre lait liquide</structure:Description>
+      </structure:Code>
+      <structure:Code value="217">
+        <structure:Description xml:lang="en">Fluid skim milk</structure:Description>
+        <structure:Description xml:lang="fr">Lait écrémé liquide</structure:Description>
+      </structure:Code>
+      <structure:Code value="218">
+        <structure:Description xml:lang="en">Other fluid milk</structure:Description>
+        <structure:Description xml:lang="fr">Autre lait liquide</structure:Description>
+      </structure:Code>
+      <structure:Code value="88">
+        <structure:Description xml:lang="en">Butter</structure:Description>
+        <structure:Description xml:lang="fr">Beurre</structure:Description>
+      </structure:Code>
+      <structure:Code value="89">
+        <structure:Description xml:lang="en">Ice cream and ice milk (including novelties)</structure:Description>
+        <structure:Description xml:lang="fr">Crème glacée et produits laitiers glacés (inclut les friandises laitières glacées)</structure:Description>
+      </structure:Code>
+      <structure:Code value="90">
+        <structure:Description xml:lang="en">Other dairy products</structure:Description>
+        <structure:Description xml:lang="fr">Autres produits laitiers</structure:Description>
+      </structure:Code>
+      <structure:Code value="219">
+        <structure:Description xml:lang="en">Other processed milk products</structure:Description>
+        <structure:Description xml:lang="fr">Autres laits transformés</structure:Description>
+      </structure:Code>
+      <structure:Code value="220">
+        <structure:Description xml:lang="en">Other processed dairy products</structure:Description>
+        <structure:Description xml:lang="fr">Autres produits laitiers transformés</structure:Description>
+      </structure:Code>
+      <structure:Code value="221">
+        <structure:Description xml:lang="en">Frozen yogurt</structure:Description>
+        <structure:Description xml:lang="fr">Yogourt glacé</structure:Description>
+      </structure:Code>
+      <structure:Code value="222">
+        <structure:Description xml:lang="en">Cream (except sour cream)</structure:Description>
+        <structure:Description xml:lang="fr">Crème (sauf la crème sure)</structure:Description>
+      </structure:Code>
+      <structure:Code value="223">
+        <structure:Description xml:lang="en">All other dairy products</structure:Description>
+        <structure:Description xml:lang="fr">Tous les autres produits laitiers</structure:Description>
+      </structure:Code>
+      <structure:Code value="91">
+        <structure:Description xml:lang="en">Dairy product substitutes</structure:Description>
+        <structure:Description xml:lang="fr">Substituts de produits laitiers</structure:Description>
+      </structure:Code>
+      <structure:Code value="92">
+        <structure:Description xml:lang="en">Eggs and other egg products</structure:Description>
+        <structure:Description xml:lang="fr">Oeufs et autres produits d'oeufs</structure:Description>
+      </structure:Code>
+      <structure:Code value="224">
+        <structure:Description xml:lang="en">Eggs</structure:Description>
+        <structure:Description xml:lang="fr">Œufs</structure:Description>
+      </structure:Code>
+      <structure:Code value="225">
+        <structure:Description xml:lang="en">Other egg products</structure:Description>
+        <structure:Description xml:lang="fr">Autres produits d'oeufs</structure:Description>
+      </structure:Code>
+      <structure:Code value="93">
+        <structure:Description xml:lang="en">Meat</structure:Description>
+        <structure:Description xml:lang="fr">Viande</structure:Description>
+      </structure:Code>
+      <structure:Code value="226">
+        <structure:Description xml:lang="en">Meat (except processed meat)</structure:Description>
+        <structure:Description xml:lang="fr">Viande (sauf les produits de viande transformée)</structure:Description>
+      </structure:Code>
+      <structure:Code value="94">
+        <structure:Description xml:lang="en">Beef</structure:Description>
+        <structure:Description xml:lang="fr">Boeuf</structure:Description>
+      </structure:Code>
+      <structure:Code value="95">
+        <structure:Description xml:lang="en">Pork</structure:Description>
+        <structure:Description xml:lang="fr">Porc</structure:Description>
+      </structure:Code>
+      <structure:Code value="96">
+        <structure:Description xml:lang="en">Poultry</structure:Description>
+        <structure:Description xml:lang="fr">Volaille</structure:Description>
+      </structure:Code>
+      <structure:Code value="227">
+        <structure:Description xml:lang="en">Turkey</structure:Description>
+        <structure:Description xml:lang="fr">Dinde</structure:Description>
+      </structure:Code>
+      <structure:Code value="228">
+        <structure:Description xml:lang="en">Chicken</structure:Description>
+        <structure:Description xml:lang="fr">Poulet</structure:Description>
+      </structure:Code>
+      <structure:Code value="97">
+        <structure:Description xml:lang="en">Other meat and poultry</structure:Description>
+        <structure:Description xml:lang="fr">Autres viandes et volaille</structure:Description>
+      </structure:Code>
+      <structure:Code value="98">
+        <structure:Description xml:lang="en">Processed meat</structure:Description>
+        <structure:Description xml:lang="fr">Produits de viande transformée</structure:Description>
+      </structure:Code>
+      <structure:Code value="99">
+        <structure:Description xml:lang="en">Bacon and ham</structure:Description>
+        <structure:Description xml:lang="fr">Bacon et jambon</structure:Description>
+      </structure:Code>
+      <structure:Code value="229">
+        <structure:Description xml:lang="en">Bacon</structure:Description>
+        <structure:Description xml:lang="fr">Bacon</structure:Description>
+      </structure:Code>
+      <structure:Code value="230">
+        <structure:Description xml:lang="en">Uncooked ham and dinner ham (except deli-style and canned)</structure:Description>
+        <structure:Description xml:lang="fr">Jambon cru et préparations à base de jambon (sauf les charcuteries et les conserves)</structure:Description>
+      </structure:Code>
+      <structure:Code value="100">
+        <structure:Description xml:lang="en">Other processed meat</structure:Description>
+        <structure:Description xml:lang="fr">Autres produits de viande transformée</structure:Description>
+      </structure:Code>
+      <structure:Code value="101">
+        <structure:Description xml:lang="en">Sausage and wieners</structure:Description>
+        <structure:Description xml:lang="fr">Saucisses et saucisses fumées</structure:Description>
+      </structure:Code>
+      <structure:Code value="231">
+        <structure:Description xml:lang="en">Sausage (fresh or frozen, uncooked)</structure:Description>
+        <structure:Description xml:lang="fr">Saucisses crues (fraîches ou congelées)</structure:Description>
+      </structure:Code>
+      <structure:Code value="232">
+        <structure:Description xml:lang="en">Wieners (except canned)</structure:Description>
+        <structure:Description xml:lang="fr">Saucisses fumées (sauf en conserve)</structure:Description>
+      </structure:Code>
+      <structure:Code value="102">
+        <structure:Description xml:lang="en">Deli and deli-style meat</structure:Description>
+        <structure:Description xml:lang="fr">Charcuteries</structure:Description>
+      </structure:Code>
+      <structure:Code value="103">
+        <structure:Description xml:lang="en">Other meat preparations</structure:Description>
+        <structure:Description xml:lang="fr">Autres préparations à base de viande</structure:Description>
+      </structure:Code>
+      <structure:Code value="104">
+        <structure:Description xml:lang="en">Other meat preparations (frozen or prepared)</structure:Description>
+        <structure:Description xml:lang="fr">Autres préparations à base de viande (congelées ou prêtes à manger ou à cuire)</structure:Description>
+      </structure:Code>
+      <structure:Code value="105">
+        <structure:Description xml:lang="en">Meat stew and other meat preparations (canned)</structure:Description>
+        <structure:Description xml:lang="fr">Ragoûts de viande et autres préparations à base de viande (en conserve)</structure:Description>
+      </structure:Code>
+      <structure:Code value="106">
+        <structure:Description xml:lang="en">Fish and seafood</structure:Description>
+        <structure:Description xml:lang="fr">Poissons et fruits de mer</structure:Description>
+      </structure:Code>
+      <structure:Code value="107">
+        <structure:Description xml:lang="en">Fresh or frozen fish</structure:Description>
+        <structure:Description xml:lang="fr">Poissons frais ou congelés</structure:Description>
+      </structure:Code>
+      <structure:Code value="233">
+        <structure:Description xml:lang="en">Cod, flounder, sole and haddock (fresh or frozen, uncooked)</structure:Description>
+        <structure:Description xml:lang="fr">Morue, plie, sole et aiglefin (frais ou congelés, crus)</structure:Description>
+      </structure:Code>
+      <structure:Code value="111">
+        <structure:Description xml:lang="en">Salmon (fresh or frozen, uncooked)</structure:Description>
+        <structure:Description xml:lang="fr">Saumon (frais ou congelé, cru)</structure:Description>
+      </structure:Code>
+      <structure:Code value="112">
+        <structure:Description xml:lang="en">Other fish (fresh or frozen, uncooked)</structure:Description>
+        <structure:Description xml:lang="fr">Autres poissons (frais ou congelés, crus)</structure:Description>
+      </structure:Code>
+      <structure:Code value="113">
+        <structure:Description xml:lang="en">Canned fish or other preserved fish</structure:Description>
+        <structure:Description xml:lang="fr">Poissons en conserve ou autres conserves de poissons</structure:Description>
+      </structure:Code>
+      <structure:Code value="114">
+        <structure:Description xml:lang="en">Tuna (canned)</structure:Description>
+        <structure:Description xml:lang="fr">Thon (en conserve)</structure:Description>
+      </structure:Code>
+      <structure:Code value="115">
+        <structure:Description xml:lang="en">Salmon (canned)</structure:Description>
+        <structure:Description xml:lang="fr">Saumon (en conserve)</structure:Description>
+      </structure:Code>
+      <structure:Code value="117">
+        <structure:Description xml:lang="en">Cured fish</structure:Description>
+        <structure:Description xml:lang="fr">Poissons saumurés</structure:Description>
+      </structure:Code>
+      <structure:Code value="116">
+        <structure:Description xml:lang="en">Other fish (canned or bottled)</structure:Description>
+        <structure:Description xml:lang="fr">Autres poissons (en conserve ou embouteillés)</structure:Description>
+      </structure:Code>
+      <structure:Code value="118">
+        <structure:Description xml:lang="en">Seafood and other marine products</structure:Description>
+        <structure:Description xml:lang="fr">Fruits de mer et autres produits de la mer</structure:Description>
+      </structure:Code>
+      <structure:Code value="119">
+        <structure:Description xml:lang="en">Shrimp and prawns</structure:Description>
+        <structure:Description xml:lang="fr">Crevettes et langoustines</structure:Description>
+      </structure:Code>
+      <structure:Code value="120">
+        <structure:Description xml:lang="en">Other seafood and marine products</structure:Description>
+        <structure:Description xml:lang="fr">Autres fruits de mers et produits de la mer</structure:Description>
+      </structure:Code>
+      <structure:Code value="234">
+        <structure:Description xml:lang="en">Lobster</structure:Description>
+        <structure:Description xml:lang="fr">Homards</structure:Description>
+      </structure:Code>
+      <structure:Code value="235">
+        <structure:Description xml:lang="en">Crab</structure:Description>
+        <structure:Description xml:lang="fr">Crabes</structure:Description>
+      </structure:Code>
+      <structure:Code value="236">
+        <structure:Description xml:lang="en">Mussels</structure:Description>
+        <structure:Description xml:lang="fr">Moules</structure:Description>
+      </structure:Code>
+      <structure:Code value="237">
+        <structure:Description xml:lang="en">Other shellfish</structure:Description>
+        <structure:Description xml:lang="fr">Autres crustacés</structure:Description>
+      </structure:Code>
+      <structure:Code value="238">
+        <structure:Description xml:lang="en">Other marine products</structure:Description>
+        <structure:Description xml:lang="fr">Autres produits de la mer</structure:Description>
+      </structure:Code>
+      <structure:Code value="121">
+        <structure:Description xml:lang="en">Non-alcoholic beverages and other food products</structure:Description>
+        <structure:Description xml:lang="fr">Boissons non-alcoolisées et autres produits alimentaires</structure:Description>
+      </structure:Code>
+      <structure:Code value="122">
+        <structure:Description xml:lang="en">Non-alcoholic beverages and beverage mixes</structure:Description>
+        <structure:Description xml:lang="fr">Boissons non-alcoolisées et préparations pour boisson</structure:Description>
+      </structure:Code>
+      <structure:Code value="123">
+        <structure:Description xml:lang="en">Coffee and tea</structure:Description>
+        <structure:Description xml:lang="fr">Café et thé</structure:Description>
+      </structure:Code>
+      <structure:Code value="124">
+        <structure:Description xml:lang="en">Roasted and ground coffee</structure:Description>
+        <structure:Description xml:lang="fr">Café torréfié et moulu</structure:Description>
+      </structure:Code>
+      <structure:Code value="125">
+        <structure:Description xml:lang="en">Instant and other coffee</structure:Description>
+        <structure:Description xml:lang="fr">Café instantanné et autre café</structure:Description>
+      </structure:Code>
+      <structure:Code value="126">
+        <structure:Description xml:lang="en">Tea (including herbal)</structure:Description>
+        <structure:Description xml:lang="fr">Thé (inclut tisane)</structure:Description>
+      </structure:Code>
+      <structure:Code value="127">
+        <structure:Description xml:lang="en">Non-alcoholic beverages</structure:Description>
+        <structure:Description xml:lang="fr">Boissons non-alcoolisées</structure:Description>
+      </structure:Code>
+      <structure:Code value="128">
+        <structure:Description xml:lang="en">Carbonated soft drinks</structure:Description>
+        <structure:Description xml:lang="fr">Boissons gazeuses sucrées</structure:Description>
+      </structure:Code>
+      <structure:Code value="129">
+        <structure:Description xml:lang="en">Carbonated water and flavoured water</structure:Description>
+        <structure:Description xml:lang="fr">Eau gazéifiée et eau aromatisée</structure:Description>
+      </structure:Code>
+      <structure:Code value="130">
+        <structure:Description xml:lang="en">Bottled water</structure:Description>
+        <structure:Description xml:lang="fr">Eau embouteillée</structure:Description>
+      </structure:Code>
+      <structure:Code value="131">
+        <structure:Description xml:lang="en">Meal replacement (powder and drink)</structure:Description>
+        <structure:Description xml:lang="fr">Substitut de repas (poudres et breuvages)</structure:Description>
+      </structure:Code>
+      <structure:Code value="133">
+        <structure:Description xml:lang="en">Sports and energy drinks</structure:Description>
+        <structure:Description xml:lang="fr">Boissons énergisantes et sportives</structure:Description>
+      </structure:Code>
+      <structure:Code value="132">
+        <structure:Description xml:lang="en">Other non-alcoholic beverages</structure:Description>
+        <structure:Description xml:lang="fr">Autres boissons non-alcoolisées</structure:Description>
+      </structure:Code>
+      <structure:Code value="134">
+        <structure:Description xml:lang="en">Sugar and confectionery</structure:Description>
+        <structure:Description xml:lang="fr">Sucre et confiseries</structure:Description>
+      </structure:Code>
+      <structure:Code value="135">
+        <structure:Description xml:lang="en">Sugar, syrups and sugar substitutes</structure:Description>
+        <structure:Description xml:lang="fr">Sucre, sirops et succédanés du sucre</structure:Description>
+      </structure:Code>
+      <structure:Code value="136">
+        <structure:Description xml:lang="en">Sugar</structure:Description>
+        <structure:Description xml:lang="fr">Sucre</structure:Description>
+      </structure:Code>
+      <structure:Code value="137">
+        <structure:Description xml:lang="en">Artificial sweeteners</structure:Description>
+        <structure:Description xml:lang="fr">Succédanés du sucre</structure:Description>
+      </structure:Code>
+      <structure:Code value="138">
+        <structure:Description xml:lang="en">Syrups and molasses</structure:Description>
+        <structure:Description xml:lang="fr">Sirops et mélasse</structure:Description>
+      </structure:Code>
+      <structure:Code value="139">
+        <structure:Description xml:lang="en">Sugar preparations for baking and desserts</structure:Description>
+        <structure:Description xml:lang="fr">Préparations à base de sucre pour pâtisseries et desserts</structure:Description>
+      </structure:Code>
+      <structure:Code value="140">
+        <structure:Description xml:lang="en">Other sugar, confections and preparations</structure:Description>
+        <structure:Description xml:lang="fr">Autres sucres, sucreries et préparations à base de sucre</structure:Description>
+      </structure:Code>
+      <structure:Code value="141">
+        <structure:Description xml:lang="en">Candies and chocolates</structure:Description>
+        <structure:Description xml:lang="fr">Bonbons et chocolats</structure:Description>
+      </structure:Code>
+      <structure:Code value="142">
+        <structure:Description xml:lang="en">Chocolate bars</structure:Description>
+        <structure:Description xml:lang="fr">Tablettes de chocolat</structure:Description>
+      </structure:Code>
+      <structure:Code value="143">
+        <structure:Description xml:lang="en">Other chocolate confections</structure:Description>
+        <structure:Description xml:lang="fr">Autres produits chocolatés</structure:Description>
+      </structure:Code>
+      <structure:Code value="144">
+        <structure:Description xml:lang="en">Baking chocolate, cocoa and chocolate substitutes</structure:Description>
+        <structure:Description xml:lang="fr">Chocolat à cuisson, cacao et substituts du chocolat</structure:Description>
+      </structure:Code>
+      <structure:Code value="145">
+        <structure:Description xml:lang="en">Sugar candy</structure:Description>
+        <structure:Description xml:lang="fr">Sucreries</structure:Description>
+      </structure:Code>
+      <structure:Code value="146">
+        <structure:Description xml:lang="en">Gum</structure:Description>
+        <structure:Description xml:lang="fr">Gomme à mâcher</structure:Description>
+      </structure:Code>
+      <structure:Code value="147">
+        <structure:Description xml:lang="en">Margarine, oils and fats (excluding butter)</structure:Description>
+        <structure:Description xml:lang="fr">Margarine, huiles et matières grasses (sauf le beurre)</structure:Description>
+      </structure:Code>
+      <structure:Code value="148">
+        <structure:Description xml:lang="en">Margarine</structure:Description>
+        <structure:Description xml:lang="fr">Margarine</structure:Description>
+      </structure:Code>
+      <structure:Code value="149">
+        <structure:Description xml:lang="en">Cooking and salad oils</structure:Description>
+        <structure:Description xml:lang="fr">Huiles à friture et à salade</structure:Description>
+      </structure:Code>
+      <structure:Code value="152">
+        <structure:Description xml:lang="en">Other oils and fats</structure:Description>
+        <structure:Description xml:lang="fr">Autres huiles et matières grasses</structure:Description>
+      </structure:Code>
+      <structure:Code value="153">
+        <structure:Description xml:lang="en">Condiments, spices and vinegars</structure:Description>
+        <structure:Description xml:lang="fr">Condiments, épices et vinaigres</structure:Description>
+      </structure:Code>
+      <structure:Code value="154">
+        <structure:Description xml:lang="en">Mayonnaise, salad dressings and dips</structure:Description>
+        <structure:Description xml:lang="fr">Mayonnaise, vinaigrettes et trempettes</structure:Description>
+      </structure:Code>
+      <structure:Code value="155">
+        <structure:Description xml:lang="en">Pasta and pizza sauces (canned, bottled or dried)</structure:Description>
+        <structure:Description xml:lang="fr">Sauces pour pâtes et pour pizza (en conserve, embouteillées ou déshydratées)</structure:Description>
+      </structure:Code>
+      <structure:Code value="156">
+        <structure:Description xml:lang="en">Other sauces and gravies (canned, bottled or dried)</structure:Description>
+        <structure:Description xml:lang="fr">Autres sauces et jus de viande (en conserve, embouteillés ou déshydratés)</structure:Description>
+      </structure:Code>
+      <structure:Code value="157">
+        <structure:Description xml:lang="en">Dried herbs and spices</structure:Description>
+        <structure:Description xml:lang="fr">Fines herbes séchées et épices</structure:Description>
+      </structure:Code>
+      <structure:Code value="158">
+        <structure:Description xml:lang="en">Food seasonings (including table salt)</structure:Description>
+        <structure:Description xml:lang="fr">Assaisonnements (inclut le sel de table)</structure:Description>
+      </structure:Code>
+      <structure:Code value="159">
+        <structure:Description xml:lang="en">Ketchup</structure:Description>
+        <structure:Description xml:lang="fr">Ketchup</structure:Description>
+      </structure:Code>
+      <structure:Code value="161">
+        <structure:Description xml:lang="en">Pickled vegetables (including olives)</structure:Description>
+        <structure:Description xml:lang="fr">Marinades de légumes (inclut les olives)</structure:Description>
+      </structure:Code>
+      <structure:Code value="162">
+        <structure:Description xml:lang="en">Fresh herbs</structure:Description>
+        <structure:Description xml:lang="fr">Fines herbes fraîches</structure:Description>
+      </structure:Code>
+      <structure:Code value="160">
+        <structure:Description xml:lang="en">Other condiments (including vinegar)</structure:Description>
+        <structure:Description xml:lang="fr">Autres condiments (inclut le vinaigre)</structure:Description>
+      </structure:Code>
+      <structure:Code value="163">
+        <structure:Description xml:lang="en">Infant food</structure:Description>
+        <structure:Description xml:lang="fr">Aliments pour nourrissons</structure:Description>
+      </structure:Code>
+      <structure:Code value="239">
+        <structure:Description xml:lang="en">Infant formula</structure:Description>
+        <structure:Description xml:lang="fr">Formule pour nourrissons</structure:Description>
+      </structure:Code>
+      <structure:Code value="240">
+        <structure:Description xml:lang="en">Infant cereals and biscuits</structure:Description>
+        <structure:Description xml:lang="fr">Céréales et biscuits pour nourrissons</structure:Description>
+      </structure:Code>
+      <structure:Code value="241">
+        <structure:Description xml:lang="en">Canned or bottled infant food</structure:Description>
+        <structure:Description xml:lang="fr">Aliments pour nourrissons en conserve ou embouteillés</structure:Description>
+      </structure:Code>
+      <structure:Code value="242">
+        <structure:Description xml:lang="en">Other infant food (including frozen)</structure:Description>
+        <structure:Description xml:lang="fr">Autre nourriture pour nourrissons (incluant congelée)</structure:Description>
+      </structure:Code>
+      <structure:Code value="164">
+        <structure:Description xml:lang="en">Frozen prepared food</structure:Description>
+        <structure:Description xml:lang="fr">Mets préparés surgelés</structure:Description>
+      </structure:Code>
+      <structure:Code value="243">
+        <structure:Description xml:lang="en">Frozen dinners and entrees</structure:Description>
+        <structure:Description xml:lang="fr">Repas congelés</structure:Description>
+      </structure:Code>
+      <structure:Code value="244">
+        <structure:Description xml:lang="en">Frozen pizza</structure:Description>
+        <structure:Description xml:lang="fr">Pizza congelée</structure:Description>
+      </structure:Code>
+      <structure:Code value="245">
+        <structure:Description xml:lang="en">Fish portions (pre-cooked and frozen)</structure:Description>
+        <structure:Description xml:lang="fr">Poisson en portion (précuit et congelé)</structure:Description>
+      </structure:Code>
+      <structure:Code value="246">
+        <structure:Description xml:lang="en">Frozen side dishes and other frozen prepared food</structure:Description>
+        <structure:Description xml:lang="fr">Plats d'accompagnement surgelés et autres préparations alimentaires surgelées</structure:Description>
+      </structure:Code>
+      <structure:Code value="165">
+        <structure:Description xml:lang="en">Soup (except infant soup)</structure:Description>
+        <structure:Description xml:lang="fr">Soupe (sauf la soupe pour nourrisson)</structure:Description>
+      </structure:Code>
+      <structure:Code value="247">
+        <structure:Description xml:lang="en">Soup (chilled, frozen, canned or bottled)</structure:Description>
+        <structure:Description xml:lang="fr">Soupe (réfrigérée, congelée, en conserve ou embouteillée)</structure:Description>
+      </structure:Code>
+      <structure:Code value="248">
+        <structure:Description xml:lang="en">Soup (dried)</structure:Description>
+        <structure:Description xml:lang="fr">Préparation pour soupe (déshydratée)</structure:Description>
+      </structure:Code>
+      <structure:Code value="166">
+        <structure:Description xml:lang="en">Ready-to-serve prepared food</structure:Description>
+        <structure:Description xml:lang="fr">Aliments cuisinés prêts à manger</structure:Description>
+      </structure:Code>
+      <structure:Code value="249">
+        <structure:Description xml:lang="en">Dinners and entrees (except frozen)</structure:Description>
+        <structure:Description xml:lang="fr">Repas préparés (sauf congelés)</structure:Description>
+      </structure:Code>
+      <structure:Code value="250">
+        <structure:Description xml:lang="en">Pizza (except frozen)</structure:Description>
+        <structure:Description xml:lang="fr">Pizza (sauf congelée)</structure:Description>
+      </structure:Code>
+      <structure:Code value="251">
+        <structure:Description xml:lang="en">Other ready-to-serve prepared food</structure:Description>
+        <structure:Description xml:lang="fr">Autres aliments cuisinés prêts à manger</structure:Description>
+      </structure:Code>
+      <structure:Code value="167">
+        <structure:Description xml:lang="en">Snack food</structure:Description>
+        <structure:Description xml:lang="fr">Collations</structure:Description>
+      </structure:Code>
+      <structure:Code value="168">
+        <structure:Description xml:lang="en">Potato-based snack foods</structure:Description>
+        <structure:Description xml:lang="fr">Collations à base de pommes de terre</structure:Description>
+      </structure:Code>
+      <structure:Code value="169">
+        <structure:Description xml:lang="en">Other snack foods</structure:Description>
+        <structure:Description xml:lang="fr">Autres collations</structure:Description>
+      </structure:Code>
+      <structure:Code value="170">
+        <structure:Description xml:lang="en">Other food preparations</structure:Description>
+        <structure:Description xml:lang="fr">Autres préparations alimentaires</structure:Description>
+      </structure:Code>
+      <structure:Code value="171">
+        <structure:Description xml:lang="en">Peanut butter and other nut butters</structure:Description>
+        <structure:Description xml:lang="fr">Beurre d'arachides et autres beurres de noix</structure:Description>
+      </structure:Code>
+      <structure:Code value="172">
+        <structure:Description xml:lang="en">Honey</structure:Description>
+        <structure:Description xml:lang="fr">Miel</structure:Description>
+      </structure:Code>
+      <structure:Code value="252">
+        <structure:Description xml:lang="en">Flavoured drink powders, crystals and syrups</structure:Description>
+        <structure:Description xml:lang="fr">Poudres, cristaux et sirops aromatisés pour breuvages</structure:Description>
+      </structure:Code>
+      <structure:Code value="253">
+        <structure:Description xml:lang="en">Fruit-flavoured drink powders, crystals and syrups</structure:Description>
+        <structure:Description xml:lang="fr">Sirop, poudres ou cristaux à saveur de fruits pour breuvages</structure:Description>
+      </structure:Code>
+      <structure:Code value="254">
+        <structure:Description xml:lang="en">Other drink flavouring powders and syrups (except fruit flavours)</structure:Description>
+        <structure:Description xml:lang="fr">Autres sirops, poudres ou cristaux aromatisés pour breuvages (sauf les saveurs de fruits)</structure:Description>
+      </structure:Code>
+      <structure:Code value="255">
+        <structure:Description xml:lang="en">Non-dairy frozen ice treats</structure:Description>
+        <structure:Description xml:lang="fr">Friandises glacées non-laitières</structure:Description>
+      </structure:Code>
+      <structure:Code value="173">
+        <structure:Description xml:lang="en">Dessert powders</structure:Description>
+        <structure:Description xml:lang="fr">Poudres pour desserts</structure:Description>
+      </structure:Code>
+      <structure:Code value="256">
+        <structure:Description xml:lang="en">Jelly powders</structure:Description>
+        <structure:Description xml:lang="fr">Poudres pour gelée</structure:Description>
+      </structure:Code>
+      <structure:Code value="257">
+        <structure:Description xml:lang="en">Prepared dessert powders</structure:Description>
+        <structure:Description xml:lang="fr">Poudres préparées pour desserts</structure:Description>
+      </structure:Code>
+      <structure:Code value="258">
+        <structure:Description xml:lang="en">Puddings, custards and jellied desserts (canned or bottled)</structure:Description>
+        <structure:Description xml:lang="fr">Poudings, costarde ou desserts en gelée (conserve ou embouteillés)</structure:Description>
+      </structure:Code>
+      <structure:Code value="175">
+        <structure:Description xml:lang="en">Tofu</structure:Description>
+        <structure:Description xml:lang="fr">Tofu</structure:Description>
+      </structure:Code>
+      <structure:Code value="176">
+        <structure:Description xml:lang="en">Other canned, bottled or dried meals</structure:Description>
+        <structure:Description xml:lang="fr">Autres repas en conserve, embouteillés ou déshydratés</structure:Description>
+      </structure:Code>
+      <structure:Code value="174">
+        <structure:Description xml:lang="en">Other materials for food preparation</structure:Description>
+        <structure:Description xml:lang="fr">Autres aliments pour cuisiner</structure:Description>
+      </structure:Code>
+      <structure:Code value="177">
+        <structure:Description xml:lang="en">Food purchased from restaurants</structure:Description>
+        <structure:Description xml:lang="fr">Aliments achetés au restaurant</structure:Description>
+      </structure:Code>
+      <structure:Code value="178">
+        <structure:Description xml:lang="en">Restaurant meals</structure:Description>
+        <structure:Description xml:lang="fr">Repas au restaurant</structure:Description>
+      </structure:Code>
+      <structure:Code value="259">
+        <structure:Description xml:lang="en">Restaurant dinners</structure:Description>
+        <structure:Description xml:lang="fr">Soupers au restaurant</structure:Description>
+      </structure:Code>
+      <structure:Code value="260">
+        <structure:Description xml:lang="en">Restaurant lunches</structure:Description>
+        <structure:Description xml:lang="fr">Dîners au restaurant</structure:Description>
+      </structure:Code>
+      <structure:Code value="261">
+        <structure:Description xml:lang="en">Restaurant breakfasts</structure:Description>
+        <structure:Description xml:lang="fr">Déjeuners au restaurant</structure:Description>
+      </structure:Code>
+      <structure:Code value="179">
+        <structure:Description xml:lang="en">Restaurant snacks and beverages</structure:Description>
+        <structure:Description xml:lang="fr">Collations et breuvages au restaurant</structure:Description>
+      </structure:Code>
+    </structure:CodeList>
+
+    <structure:CodeList xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="CL_STC_UNIT" agencyID="STATCAN" version="1.0" isFinal="false">
+      <structure:Code value="1">
+        <structure:Description xml:lang="en">dollars</structure:Description>
+        <structure:Description xml:lang="fr">dollars</structure:Description>
+      </structure:Code>
+    </structure:CodeList>
+    <structure:CodeList xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="CL_OBS_SYMBOL" agencyID="STATCAN" version="1.0" isFinal="false">
+      <structure:Code value="1">
+        <structure:Description xml:lang="en">p = Preliminary</structure:Description>
+        <structure:Description xml:lang="fr">p = Donnée provisoire</structure:Description>
+      </structure:Code>
+      <structure:Code value="3">
+        <structure:Description xml:lang="en">r = Revised</structure:Description>
+        <structure:Description xml:lang="fr">r = Donnée rectifiée</structure:Description>
+      </structure:Code>
+      <structure:Code value="4">
+        <structure:Description xml:lang="en">... = Not applicable</structure:Description>
+        <structure:Description xml:lang="fr">... = N''ayant pas lieu de figurer</structure:Description>
+      </structure:Code>
+    </structure:CodeList>
+    <structure:CodeList xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="CL_OBS_STATUS" agencyID="STATCAN" version="1.0" isFinal="false">
+      <structure:Code value="1">
+        <structure:Description xml:lang="en">.. = Not available for a specific reference period</structure:Description>
+        <structure:Description xml:lang="fr">.. = Indisponible pour une période de référence précise</structure:Description>
+      </structure:Code>
+      <structure:Code value="2">
+        <structure:Description xml:lang="en">0 = Data rounded to 0</structure:Description>
+        <structure:Description xml:lang="fr">0 = Valeur arrondie à 0</structure:Description>
+      </structure:Code>
+      <structure:Code value="3">
+        <structure:Description xml:lang="en">A = Excellent</structure:Description>
+        <structure:Description xml:lang="fr">A = Excellent</structure:Description>
+      </structure:Code>
+      <structure:Code value="4">
+        <structure:Description xml:lang="en">B = Very good</structure:Description>
+        <structure:Description xml:lang="fr">B = Très bon</structure:Description>
+      </structure:Code>
+      <structure:Code value="5">
+        <structure:Description xml:lang="en">C = Good</structure:Description>
+        <structure:Description xml:lang="fr">C = Bon</structure:Description>
+      </structure:Code>
+      <structure:Code value="6">
+        <structure:Description xml:lang="en">D = Acceptable</structure:Description>
+        <structure:Description xml:lang="fr">D = Passable</structure:Description>
+      </structure:Code>
+      <structure:Code value="7">
+        <structure:Description xml:lang="en">E = Poor,Use with caution</structure:Description>
+        <structure:Description xml:lang="fr">E = Médiocre,Utiliser avec prudence</structure:Description>
+      </structure:Code>
+      <structure:Code value="8">
+        <structure:Description xml:lang="en">F = Too unreliable to be published</structure:Description>
+        <structure:Description xml:lang="fr">F = Trop peu fiable pour être publiée</structure:Description>
+      </structure:Code>
+    </structure:CodeList>
+    <structure:CodeList xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="CL_OBS_CONF" agencyID="STATCAN" version="1.0" isFinal="false">
+      <structure:Code value="1">
+        <structure:Description xml:lang="en">x = Suppressed to meet the confidentiality requirements of the Statistics Act</structure:Description>
+        <structure:Description xml:lang="fr">x = Confidentiel en vertu des dispositions de la Loi sur la statistique</structure:Description>
+      </structure:Code>
+      <structure:Code value="2">
+        <structure:Description xml:lang="en">x = Suppressed to meet the confidentiality requirements of the Statistics Act</structure:Description>
+        <structure:Description xml:lang="fr">x = Confidentiel en vertu des dispositions de la Loi sur la statistique</structure:Description>
+      </structure:Code>
+    </structure:CodeList>
+  </CodeLists>
+  <Concepts>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="GEO">
+      <structure:Name xml:lang="en">Geography</structure:Name>
+      <structure:Name xml:lang="fr">Géographie</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="STAT">
+      <structure:Name xml:lang="en">Statistic</structure:Name>
+      <structure:Name xml:lang="fr">Statistique</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="SUMMARY">
+      <structure:Name xml:lang="en">Food expenditures, summary-level categories</structure:Name>
+      <structure:Name xml:lang="fr">Dépenses alimentaires, catégories de niveau sommaire</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="TIME_PERIOD">
+      <structure:Name xml:lang="en">Time</structure:Name>
+      <structure:Name xml:lang="fr">Temps</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="OBS_VALUE">
+      <structure:Name xml:lang="en">Observation Value</structure:Name>
+      <structure:Name xml:lang="fr">Valeur d'observation</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="OBS_SYMBOL">
+      <structure:Name xml:lang="en">Observation Symbol</structure:Name>
+      <structure:Name xml:lang="fr">Symbol d'observation</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="OBS_STATUS">
+      <structure:Name xml:lang="en">Observation Status</structure:Name>
+      <structure:Name xml:lang="fr">Observation Status</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="OBS_CONF">
+      <structure:Name xml:lang="en">Observation Confidentiality</structure:Name>
+      <structure:Name xml:lang="fr">Confidentiel d'observation</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="STC_UNIT">
+      <structure:Name xml:lang="en">Unit</structure:Name>
+      <structure:Name xml:lang="fr">Unité</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="UNIT_MULT">
+      <structure:Name xml:lang="en">Unit multplier</structure:Name>
+      <structure:Name xml:lang="fr">Unité multiplicateur</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="FOOTNOTE_REF">
+      <structure:Name xml:lang="en">Footnote reference for observation</structure:Name>
+      <structure:Name xml:lang="fr">référence de la note de renvoie d’observation</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="TERMINATED">
+      <structure:Name xml:lang="en">Terminated</structure:Name>
+      <structure:Name xml:lang="fr">terminé</structure:Name>
+    </structure:Concept>
+  </Concepts>
+  <KeyFamilies>
+    <structure:KeyFamily xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" version="1.0" isFinal="false">
+      <structure:Components>
+        <structure:Dimension conceptRef="GEO" codelist="CL_GEO" />
+        <structure:Dimension conceptRef="STAT" codelist="CL_STAT" />
+        <structure:Dimension conceptRef="SUMMARY" codelist="CL_SUMMARY" />
+        <structure:TimeDimension conceptRef="TIME_PERIOD" />
+        <structure:PrimaryMeasure conceptRef="OBS_VALUE" />
+        <structure:Attribute conceptRef="OBS_SYMBOL" codelist="CL_OBS_SYMBOL" attachmentLevel="Observation" assignmentStatus="Conditional" />
+        <structure:Attribute conceptRef="OBS_STATUS" codelist="CL_OBS_STATUS" attachmentLevel="Observation" assignmentStatus="Conditional" />
+        <structure:Attribute conceptRef="OBS_CONF" codelist="CL_OBS_CONF" attachmentLevel="Observation" assignmentStatus="Conditional" />
+        <structure:Attribute conceptRef="FOOTNOTE_REF" attachmentLevel="Observation" assignmentStatus="Conditional" />
+        <structure:Attribute conceptRef="TERMINATED" attachmentLevel="Observation" assignmentStatus="Conditional" />
+        <structure:Attribute conceptRef="STC_UNIT" codelist="CL_STC_UNIT" attachmentLevel="Series" assignmentStatus="Conditional" />
+        <structure:Attribute conceptRef="UNIT_MULT" codelist="CL_UNIT_MULT" attachmentLevel="Series" assignmentStatus="Conditional" />
+        <structure:Attribute conceptRef="DECIMALS" attachmentLevel="Series" assignmentStatus="Conditional" />
+      </structure:Components>
+      <structure:Annotations>
+        <common:Annotation>
+          <common:AnnotationTitle>1</common:AnnotationTitle>
+          <common:AnnotationType>Footnotes</common:AnnotationType>
+          <common:AnnotationText xml:lang="en">Does not include day board paid to other private households, which is now included in childcare expenses in household operations.</common:AnnotationText>
+          <common:AnnotationText xml:lang="fr">N'inclut pas les pensions de jour versées à d'autres ménages privés qui est inclut dans les frais de garde pour enfant dans les dépenses courantes.</common:AnnotationText>
+        </common:Annotation>
+        <common:Annotation>
+          <common:AnnotationTitle>3</common:AnnotationTitle>
+          <common:AnnotationType>Footnotes</common:AnnotationType>
+          <common:AnnotationText xml:lang="en">This table includes the data previously found in CANSIM table 203-0029, which has been terminated.</common:AnnotationText>
+          <common:AnnotationText xml:lang="fr">Ce tableau inclut les données du tableau CANSIM 203-0029 qui a été terminé.</common:AnnotationText>
+        </common:Annotation>
+        <common:Annotation>
+          <common:AnnotationTitle>4</common:AnnotationTitle>
+          <common:AnnotationType>Footnotes</common:AnnotationType>
+          <common:AnnotationText xml:lang="en">For more information about survey methodology, data quality, variable definitions and data products, see the Survey of Household Spending User Guide (catalogue number 62F0026MIE) available free on the Statistics Canada website: http://www5.statcan.gc.ca/bsolc/olc-cel/olc-cel?catno=62F0026M&amp;chropg=1&amp;lang=eng, Household expenditures research papers series.</common:AnnotationText>
+          <common:AnnotationText xml:lang="fr">Pour plus de renseignements sur la méthodologie, la qualité des données, la définition des variables et les produits de données de l'enquête, voir le Guide de l'utilisateur de l'Enquête sur les dépenses des ménages (numéro 62F0026MIF au catalogue) qui est disponible gratuitement sur le site web de Statistique Canada : http://www5.statcan.gc.ca/bsolc/olc-cel/olc-cel?catno=62F0026M&amp;chropg=1&amp;lang=fra, Série de documents de recherche sur les dépenses des ménages.</common:AnnotationText>
+        </common:Annotation>
+      </structure:Annotations>
+    </structure:KeyFamily>
+  </KeyFamilies>
+
+</Structure>
+
